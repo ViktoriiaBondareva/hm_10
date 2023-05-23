@@ -1,0 +1,144 @@
+@import url(./normalize.css);
+@import url(./vars.css);
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../assets/fonts/Montserrat-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    font-size: var(--main-font-size);
+    background: var(--main-background);
+    color: var(--main-color-text);
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    padding: 17px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.logo > img {
+    width: 200px;
+    height: 32px;
+    top: 7px;
+}
+
+.nav {
+    /* border: 1px solid #002200; */
+    flex-grow: 1;
+}
+
+.menu__item > a {
+    text-decoration: none;
+}
+
+
+.buttons__btn {
+    padding: 13px 40px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.features__title {
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto 50px auto;
+    font-size: 2.25em;
+    line-height: 1.22;
+    font-weight: 700;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.feature {
+    max-width: 270px;
+    min-width: 200px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0;
+
+}
+
+.btn__link {
+    padding: 13px 40px;
+    background: #FF9900;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 113px;
+    margin: 100px 0;
+}
+
+.mini_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 1200px;
+    height: 209px;
+    left: 120px;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+.input {
+    width: 340px;
+    height: 50px;
+}
